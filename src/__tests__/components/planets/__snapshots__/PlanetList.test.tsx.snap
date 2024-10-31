@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetList matches snapshot 1`] = `
+<div>
+  <section
+    class="container"
+  >
+    <div
+      class="search"
+    >
+      <input
+        class="input"
+        placeholder="Search planets..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="content "
+    >
+      <a
+        class="card"
+        href="/planets/1"
+      >
+        <h2>
+          Tatooine
+        </h2>
+        <div
+          class="details"
+        >
+          <p>
+            Climate: 
+            Arid
+          </p>
+          <p>
+            Terrain: 
+            Desert
+          </p>
+          <p>
+            Population: 
+            200000
+          </p>
+        </div>
+      </a>
+    </div>
+    <div
+      class="pagination"
+    >
+      <button
+        class="button"
+        disabled=""
+      >
+        Previous
+      </button>
+      <span
+        class="info"
+      >
+        Page 
+        1
+         of 
+        1
+      </span>
+      <button
+        class="button"
+        disabled=""
+      >
+        Next
+      </button>
+    </div>
+  </section>
+</div>
+`;

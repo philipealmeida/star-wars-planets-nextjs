@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetCard matches snapshot 1`] = `
+<div>
+  <a
+    class="card"
+    href="/planets/1"
+  >
+    <h2>
+      Tatooine
+    </h2>
+    <div
+      class="details"
+    >
+      <p>
+        Climate: 
+        Arid
+      </p>
+      <p>
+        Terrain: 
+        Desert
+      </p>
+      <p>
+        Population: 
+        200000
+      </p>
+    </div>
+  </a>
+</div>
+`;

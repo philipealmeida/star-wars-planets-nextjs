@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlanetDetails matches snapshot 1`] = `
+<div>
+  <div
+    class="details"
+  >
+    <h1
+      class="planetName"
+    >
+      Tatooine
+    </h1>
+    <div
+      class="content"
+    >
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Climate
+        </span>
+        <span
+          class="value"
+        >
+          Arid
+        </span>
+      </div>
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Terrain
+        </span>
+        <span
+          class="value"
+        >
+          Desert
+        </span>
+      </div>
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Population
+        </span>
+        <span
+          class="value"
+        >
+          200000
+        </span>
+      </div>
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Diameter
+        </span>
+        <span
+          class="value"
+        >
+          10465 km
+        </span>
+      </div>
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Gravity
+        </span>
+        <span
+          class="value"
+        >
+          1 standard
+        </span>
+      </div>
+      <div
+        class="infoItem"
+      >
+        <span
+          class="label"
+        >
+          Surface Water
+        </span>
+        <span
+          class="value"
+        >
+          1%
+        </span>
+      </div>
+    </div>
+    <a
+      class="back"
+      href="/planets"
+    >
+      ← Back to Planets
+    </a>
+  </div>
+</div>
+`;

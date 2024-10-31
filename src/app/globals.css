@@ -1,0 +1,37 @@
+:root {
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+  
+  /* Colors */
+  --primary: #ffd700;
+  --secondary: #2c3e50;
+  --background: #0a0a0a;
+  --text: #ffffff;
+  --card-bg: #1a1a1a;
+  --error: #e74c3c;
+  --success: #2ecc71;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-geist-sans);
+  margin: 0;
+  padding: 0;
+}
