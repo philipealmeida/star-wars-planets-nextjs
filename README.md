@@ -1,23 +1,23 @@
-# Star Wars Planets Explorer 🚀
+# Star Wars Planets Explorer
 
 A Next.js application that allows users to explore planets from the Star Wars universe using the SWAPI (Star Wars API).
 
-## 🎯 Overview
+## Overview
 
 As referenced in the original requirements:
 
 
-## ✨ Features
+## Features
 
-- 🔍 Search planets by name
-- 📄 Paginated list of planets
-- 📱 Detailed view of each planet
-- 🎨 Responsive design for mobile and desktop
-- 🌓 Dark/Light mode support
-- ⚡ Server-side rendering with Next.js
-- 🔄 Real-time data fetching with SWR
+- Search planets by name
+- Paginated list of planets
+- Detailed view of each planet
+- Responsive design for mobile and desktop
+- Dark/Light mode support
+- Server-side rendering with Next.js
+- Real-time data fetching with SWR
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js 15 with App Router
 - **Language:** TypeScript
@@ -26,45 +26,60 @@ As referenced in the original requirements:
 - **Font:** Geist (Sans & Mono)
 - **Testing:** Jest & React Testing Library
 
-## 📁 Project Structure
-flecto-palm-exercise/
+## Project Structure
+
+star-wars-planets-nextjs/
 ├── src/
 │ ├── app/
 │ │ ├── planets/
 │ │ │ ├── [id]/
-│ │ │ │ └── page.tsx # Planet details page
-│ │ │ └── page.tsx # Main planets listing page
-│ │ ├── layout.tsx # Root layout
-│ │ └── page.tsx # Home page
+│ │ │ │ └── page.tsx        # Planet details page
+│ │ │ └── page.tsx          # Main planets listing page
+│ │ ├── layout.tsx          # Root layout with Geist font config
+│ │ └── page.tsx            # Home page (redirects to /planets)
 │ ├── components/
-│ │ ├── planets/
-│ │ │ ├── PlanetList.tsx # Planet listing component
-│ │ │ ├── PlanetCard.tsx # Individual planet card
-│ │ │ ├── PlanetDetails.tsx # Planet details view
-│ │ │ ├── PlanetSearch.tsx # Search input component
-│ │ │ └── Pagination.tsx # Pagination controls
-│ │ └── ui/
-│ │ ├── Button.tsx # Reusable button component
-│ │ ├── Input.tsx # Reusable input component
-│ │ └── Loading.tsx # Loading spinner
+│ │ └── planets/
+│ │   ├── PlanetList.tsx    # Main planet listing with search and pagination
+│ │   ├── PlanetCard.tsx    # Individual planet card component
+│ │   ├── PlanetDetails.tsx # Detailed planet view component
+│ │   ├── PlanetSearch.tsx  # Search input with debounce
+│ │   └── Pagination.tsx    # Pagination controls
 │ ├── hooks/
-│ │ └── useSwapiPlanets.ts # SWR hook for fetching planets
+│ │ ├── useDebounce.ts      # Custom debounce hook
+│ │ └── useSwapiPlanets.ts  # SWR hook for planet data
 │ ├── lib/
-│ │ ├── types.ts # TypeScript interfaces
-│ │ └── api.ts # API utilities
+│ │ ├── types.ts            # TypeScript interfaces for planets
+│ │ └── api.ts              # SWAPI fetch utilities
 │ ├── styles/
-│ │ ├── components/ # Component-specific styles
-│ │ └── globals.css # Global styles
-│ └── utils/
-│ └── constants.ts # Constants and configuration
+│ │ ├── components/
+│ │ │ └── planets/
+│ │ │   ├── PlanetCard.module.css
+│ │ │   ├── PlanetDetails.module.css
+│ │ │   ├── PlanetList.module.css
+│ │ │   ├── PlanetSearch.module.css
+│ │ │   └── Pagination.module.css
+│ │ └── globals.css         # Global styles and CSS variables
+│ └── __tests__/
+│   └── components/
+│     └── planets/
+│       ├── PlanetCard.test.tsx
+│       ├── PlanetDetails.test.tsx
+│       ├── PlanetList.test.tsx
+│       ├── PlanetSearch.test.tsx
+│       ├── Pagination.test.tsx
+│       └── __snapshots__/   # Jest snapshots
 ├── public/
-│ └── images/ # Static images
-└── tests/
-├── components/ # Component tests
-└── hooks/ # Hook tests
+│ └── star-wars.svg         # Logo image
+├── jest.config.mjs         # Jest configuration
+├── jest.setup.ts           # Jest setup file
+├── next.config.ts          # Next.js configuration
+├── package.json            # Project dependencies
+├── tsconfig.json          # TypeScript configuration
+├── .eslintrc.json        # ESLint configuration
+└── .gitignore            # Git ignore rules
 
 
-## 🚦 Getting Started
+## Getting Started
 
 1. **Clone and Install**
 bash
@@ -79,7 +94,7 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser
 
-## 🧪 Testing
+## Testing
 
 bash
 Run unit tests
@@ -90,7 +105,7 @@ Generate coverage report
 npm test:coverage
 
 
-## 📱 Responsive Design
+## Responsive Design
 
 The application is fully responsive with breakpoints:
 - Mobile: 320px and up
@@ -101,13 +116,13 @@ CSS Module example:
 typescript:flecto/frontend-exercise/flecto-palm-execise/src/app/page.module.css
 
 
-## 🌓 Dark Mode Support
+## Dark Mode Support
 
 The application uses CSS variables for theming:
 css:flecto/frontend-exercise/flecto-palm-execise/src/app/globals.css
 
 
-## 🔄 API Integration
+## API Integration
 
 The application uses SWAPI (Star Wars API) with the following endpoints:
 
@@ -119,38 +134,38 @@ Data fetching is implemented using SWR as shown in package.json:
 json:flecto/frontend-exercise/flecto-palm-execise/package.json
 
 
-## 📦 Dependencies
+## Dependencies
 
 The project uses the following key dependencies:
 json:flecto/frontend-exercise/flecto-palm-execise/package.json
 
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to contribute to this project. Open an issue or submit PRs.
 
-## 📄 License
+## License
 
 This project is MIT licensed.
 
 ## **What we expect**
-⚛️ React and TypeScript
+React and TypeScript
 
-🐞 Unit / integration tests
+Unit / integration tests
 
-💅 A nice design using CSS
+A nice design using CSS
 
-📄 Clear README.md
+Clear README.md
 
-## What w**e’d love to see**
+## What w**e'd love to see**
 
-🔥 NextJS
+NextJS
 
-🔥 TanStack Query / SWR
+TanStack Query / SWR
 
 ## What would be nice
 If you have the time, you might want to add these to your project:
 
-🎨 Responsive layout
+Responsive layout
 
-📱 Mobile suppport
+Mobile suppport
